@@ -1,0 +1,74 @@
+@media only screen and (max-width: 1200px) {
+	.main-container {
+		padding: 200px 50px 200px 50px;
+	}
+}
+
+@media only screen and (min-width: 1001px) {
+	.main-container {
+		height: 100vh;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.main-container {
+		/*change height to 100% once content are added
+		height: 100%;*/
+		display: grid;
+		padding: 20px 10px 20px 10px;
+
+		grid-gap: 1.5rem;
+		/* if i make this a fixed px unit, i have to make sure that the contents fits inside */
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-columns: 1fr;
+
+		grid-template-areas: 
+			"name_contact_me"
+			"about_me"
+			"image_projects"
+		;
+	}
+
+	#name_contact_me {
+		height: 600px;
+	}
+
+	#about_me {
+		height: 600px;
+	}
+
+	#image_projects {
+		height: 6	00px;
+	}
+
+	.form-container {
+		padding: 20px;
+
+		grid-gap: .2rem;
+	 	grid-template-columns: .5fr 1.5fr;
+		grid-template-areas: 
+		"contact-form-div contact-form-div contact-form-div contact-form-div"
+		"firstNameLabel firstNameInput"
+		"lastNameLabel lastNameInput"
+		"emailLabel emailInput"
+		"mobileNoLabel mobileNoInput"
+		"sendButton sendButton sendButton sendButton"
+		;
+	}
+}
+
+@media only screen and (max-width: 350px) {
+	/*add text transformation here*/
+	#about_me:hover span {
+
+		position: relative;
+		top: 9%;
+		left: 80%;
+
+		font-size: 1.5rem;
+	}
+
+	#name_contact_me > .name_contact_me_inner_div {
+		padding-top: 25px;
+	}
+}

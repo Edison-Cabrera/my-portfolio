@@ -1,0 +1,32 @@
+#about_me {
+	grid-area: about_me;
+}
+
+/*on windows, item visible on hover. on mobile, needs to click*/
+/*use reddit style when playing videos*/
+#about_me span {
+	display: none;
+}
+
+#about_me:hover span {
+	display: block;
+
+	position: relative;
+	top: 5%;
+	left: 80%;
+
+	/*need to adjsut here*/
+	font-size: 1.5rem;
+	color: #034C11;
+	font-weight: bold;
+	writing-mode: vertical-rl;
+	text-orientation: upright;
+}
+
+.about_me_img {
+	background-image: url(https://dm2304files.storage.live.com/y4mMESqrBQSWh89XFOsa6tm6JnXcfDXOs7BzN258KVX0rTCZtgQlr8bPyqKi-hnmBfm_e49wrNyuuJxpwDAOoqmKpcT0ZuAxrGFmNPLie2OOYQGgSItbYrkxrq7EFlcSRV3N99c5lbtsnUGaJGWP5qLbqNSCnbvy3-s-5OrYycH3ZcKCuFBzC5EMjeTX-aP5hSD?width=2000&height=1500&cropmode=none);
+
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}

@@ -1,0 +1,78 @@
+#image_projects {
+	grid-area: image_projects;
+	padding: 0px;
+	align-items: ;
+
+	display: grid;
+	grid-gap: 0.5rem;
+
+	grid-template-columns: 0.2fr 1.6fr 0.2fr;
+	grid-template-rows: repeat(2, .5fr);
+	grid-template-areas: 
+		"prevButton image_projects_div nextButton"
+		"prevButton image_projects_div nextButton";
+
+	cursor: default;
+}
+
+#prevButton {
+	grid-area: prevButton;
+	border-radius: 25px 0px 0px 25px;
+}
+
+#nextButton {
+	grid-area: nextButton;
+	border-radius: 0px 25px 25px 0px;
+}
+
+#prevButton, #nextButton {
+	color: #5bb573;
+	border: none;
+	background-color: transparent;
+	font-size: 50px;
+}
+
+#prevButton:hover, #nextButton:hover {
+	background-color: rgba(3, 76, 17, 0.1);
+	cursor: pointer;
+}
+
+.image_projects_div {
+	grid-area: image_projects_div;
+	padding-bottom: 5px;
+}
+
+.image_projects_div_inner h1 {
+	font-size: 1.8rem;
+}
+
+.image_projects_img {
+	/*for testing purposes only*/
+	background-image: url(https://dm2304files.storage.live.com/y4m3Gnj1tcuZEI6iKU4JMCBG0nFJWtLUJprtidWeEJriBV-g2o2GZdW3VrNw9UbAYzCkCjEpZnTe4c9sO2sUYpnCgBLluaUiCHkbAuVAC6GJIutPqVD2RxFEEq3BY0DJFxAKs1rMvgaujF6bd6zqI9hPyEOdyh7-JymENd34IzgNs8fGejC31vrV6EtV1gHXclz?width=1008&height=490&cropmode=none);
+
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-blend-mode: soft-light;
+}
+
+.link-style {
+	text-decoration: none;
+	margin: 0px 0px 0px 15px;
+}
+
+/*.link-style input {
+	padding: 5px;
+	border-radius: 8px;
+
+	font-size: 0.9rem;
+	color: #fff;
+	font-family: Kanit, sans-serif;
+	font-weight: 300;
+
+	background-color: #429189;	
+	position: relative;	
+	box-shadow: 3px 3px 10px -3px #446664;
+
+	border-style: none;
+}*/

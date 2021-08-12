@@ -1,0 +1,73 @@
+.form-container {
+	/*background-color: grey;*/
+
+	padding: 10px;
+	height: 100%;
+	align-items: center;	
+
+	font-weight: 400;
+	font-size: 1.2rem;
+
+	display: grid;
+
+	grid-template-columns: 0.7fr 1.3fr 0.7fr 1.3fr;
+	grid-template-rows: repeat(6, 1fr);
+	grid-gap: 1rem;
+	grid-template-areas: 
+	"contact-form-div contact-form-div contact-form-div contact-form-div"
+	"firstNameLabel firstNameInput firstNameInput firstNameInput"
+	"lastNameLabel lastNameInput lastNameInput lastNameInput"
+	"emailLabel emailInput emailInput emailInput"
+	"mobileNoLabel mobileNoInput mobileNoInput mobileNoInput"
+	"sendButton sendButton sendButton sendButton"
+	;
+}
+
+.contact-form-div {
+	grid-area: contact-form-div;
+}
+
+#firstNameLabel {
+	grid-area: firstNameLabel;
+}
+
+#firstNameInput {
+	grid-area: firstNameInput;
+}
+
+#lastNameLabel {
+	grid-area: lastNameLabel;
+}
+
+#lastNameInput {
+	grid-area: lastNameInput;
+}
+
+#emailLabel {
+	grid-area: emailLabel;
+}
+
+#emailInput {
+	grid-area: emailInput;
+}
+
+#mobileNoLabel {
+	grid-area: mobileNoLabel;
+}
+
+#mobileNoInput {
+	grid-area: mobileNoInput;
+}
+
+#sendButton {
+	grid-area: sendButton;
+	width: 30%;
+	height: 2.5rem;
+	justify-self: center;
+}
+
+#firstNameInput, #lastNameInput, #emailInput, #mobileNoInput {
+	height: 2.5rem;
+
+}
+

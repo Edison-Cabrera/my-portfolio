@@ -1,0 +1,30 @@
+#name_contact_me {
+	grid-area: name_contact_me;
+	color: #387549;
+}
+
+#name_contact_me > .name_contact_me_inner_div {
+	padding-top: 15px;
+}
+
+.name_contact_me_img {
+	/*for testing purposes only*/
+	background-image: url(https://dm2304files.storage.live.com/y4mFUP8xUjuZO6uxJRQKByI4yUgAXy2tYQxxGHk7cYpYN1dmEVDo9bp1AfOQaJ_sxifC4ML7XZXgkQv70C6oUCqAGsUv-ndSxsnLAU2yzeWKcqprfI-NkF_WFKm6kOn0vJWwPHi5GwHZRlCyqyrIHiG0I-Wyepqso3NgyvYC1lTEj19aAHABB65wMS584NWGE3I?width=2000&height=1500&cropmode=none);
+
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-blend-mode: soft-light;
+}
+
+#name_contact_me  h4 {
+	margin: 15px 0px 0px 15px;
+}
+
+#name_contact_me  h1 {
+	margin: 0px 0px 0px 15px;
+}
+
+#name_contact_me  p {
+	margin: 0px 0px 0px 15px;
+}
