@@ -85,17 +85,17 @@ function changeToInputForm() {
 
 		nameContactMe.innerHTML =
 		`
-			<form id="contact-form-container" action="" autocomplete="off" class="form-container">
+			<form id="contact-form-container" action="mailto:nevercreatives@gmail.com" autocomplete="off" class="form-container">
 				<div class="contact-form-div heading-style-1">Contact Form</div>
 				<label for="firstNameInput" id="firstNameLabel">First Name: </label>
-				<input type="text" id="firstNameInput">
+				<input type="text" id="firstNameInput" class="input-field-style" required>
 				<label for="lastNameInput" id="lastNameLabel">Last Name: </label>
-				<input type="text" id="lastNameInput">
+				<input type="text" id="lastNameInput" class="input-field-style" required>
 				<label for="emailInput" id="emailLabel">Email: </label>
-				<input type="email" id="emailInput">
-				<label for="mobileNoInput" id="mobileNoLabel">Mobile No: </label>
-				<input type="text" id="mobileNoInput">
-				<input type="submit" value="Send" id="sendButton" class="input-button-style">
+				<input type="email" id="emailInput" class="input-field-style" required>
+				<label for="comment_text_area_input" id="comment_text_area_input_label">Comment: </label>
+				<textarea id="comment_text_area_input" class="input-field-style" required></textarea>
+				<input type="submit" formenctype="text/plain" value="Send" id="sendButton" class="input-button-style">
 			</form>
 		`;
 	}

@@ -89,3 +89,16 @@ html, body {
 	border-style: none;
 }
 
+.input-field-style {
+	border-radius: 12px;
+	border-style: none;
+
+	position: relative;	
+	box-shadow: 0px 0px 10px -2px #304A4C;
+
+	padding: 5px 7px 5px 7px;
+}
+
+.input-field-style:focus {
+	outline: none;
+}

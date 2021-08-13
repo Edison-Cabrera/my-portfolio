@@ -3,28 +3,36 @@
 
 	padding: 10px;
 	height: 100%;
-	align-items: center;	
 
 	font-weight: 400;
 	font-size: 1.2rem;
 
 	display: grid;
 
-	grid-template-columns: 0.7fr 1.3fr 0.7fr 1.3fr;
-	grid-template-rows: repeat(6, 1fr);
+	grid-template-columns: 0.5fr 1fr;
+	grid-template-rows: .8fr .8fr .8fr .8fr 2fr .8fr;
 	grid-gap: 1rem;
 	grid-template-areas: 
-	"contact-form-div contact-form-div contact-form-div contact-form-div"
-	"firstNameLabel firstNameInput firstNameInput firstNameInput"
-	"lastNameLabel lastNameInput lastNameInput lastNameInput"
-	"emailLabel emailInput emailInput emailInput"
-	"mobileNoLabel mobileNoInput mobileNoInput mobileNoInput"
-	"sendButton sendButton sendButton sendButton"
+	"contact-form-div contact-form-div"
+	"firstNameLabel firstNameInput"
+	"lastNameLabel lastNameInput"
+	"emailLabel emailInput"
+	"comment_text_area_input_label comment_text_area_input"
+	"sendButton sendButton"
 	;
 }
 
 .contact-form-div {
 	grid-area: contact-form-div;
+	text-align: center;
+
+	border-radius: 12px;
+	border-style: none;
+
+	position: relative;	
+	box-shadow: 0px 0px 10px -2px #304A4C;
+
+	font-size: 2rem;
 }
 
 #firstNameLabel {
@@ -51,12 +59,19 @@
 	grid-area: emailInput;
 }
 
-#mobileNoLabel {
-	grid-area: mobileNoLabel;
+#comment_text_area_input_label {
+	grid-area: comment_text_area_input_label;
 }
 
-#mobileNoInput {
-	grid-area: mobileNoInput;
+#comment_text_area_input {
+	grid-area: comment_text_area_input;
+
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+	font-family: Kanit, sans-serif;
+	font-weight: 300;
+	font-size: 1rem;
 }
 
 #sendButton {
@@ -66,8 +81,6 @@
 	justify-self: center;
 }
 
-#firstNameInput, #lastNameInput, #emailInput, #mobileNoInput {
+#firstNameInput, #lastNameInput, #emailInput {
 	height: 2.5rem;
-
 }
-
